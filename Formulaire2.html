@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Formulaire</title>
+	<link rel="stylesheet" href="frame.css">
+	<style>
+		/* Style spécifique pour Formulaire2.html */
+		body {
+			background-color: #f8f9fe;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			padding: 2rem;
+			color: #2c3e50;
+		}
+	
+		fieldset {
+			background-color: white;
+			border: none;
+			border-radius: 10px;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+			padding: 1.5rem;
+			margin-bottom: 1.5rem;
+			position: relative;
+			overflow: hidden;
+		}
+	
+		fieldset::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 5px;
+			height: 100%;
+			background: linear-gradient(to bottom, #6a11cb, #2575fc);
+		}
+	
+		legend {
+			background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+			color: white;
+			padding: 0.5rem 1.2rem;
+			border-radius: 20px;
+			font-weight: bold;
+			font-size: 1.1em;
+			box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		}
+	
+		div {
+			margin-bottom: 1rem;
+		}
+	
+		label {
+			display: block;
+			margin-bottom: 0.5rem;
+			font-weight: 500;
+			color: #2c3e50;
+		}
+	
+		input[type="text"],
+		select {
+			width: 100%;
+			padding: 0.8rem;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			font-family: inherit;
+			transition: all 0.3s ease;
+		}
+	
+		input[type="text"]:focus,
+		select:focus {
+			border-color: #6a11cb;
+			box-shadow: 0 0 0 3px rgba(106,17,203,0.1);
+			outline: none;
+		}
+	
+		input[type="checkbox"],
+		input[type="radio"] {
+			margin-right: 0.5rem;
+			transform: scale(1.2);
+		}
+	
+		button {
+			background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+			color: white;
+			border: none;
+			padding: 0.8rem 1.5rem;
+			border-radius: 5px;
+			font-weight: bold;
+			cursor: pointer;
+			margin-right: 1rem;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		}
+	
+		button:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+		}
+	
+		button:nth-of-type(2) {
+			background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+		}
+	
+		button:nth-of-type(3) {
+			background: linear-gradient(135deg, #434343 0%, #000000 100%);
+		}
+	
+		/* Style pour les options du select */
+		.sexe option.homme {
+			background-color: #d4e6ff;
+		}
+	
+		.sexe option.femme {
+			background-color: #ffd4e8;
+		}
+	
+		/* Animation */
+		@keyframes slideIn {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	
+		fieldset {
+			animation: slideIn 0.5s ease-out forwards;
+		}
+	
+		fieldset:nth-child(1) { animation-delay: 0.1s; }
+		fieldset:nth-child(2) { animation-delay: 0.2s; }
+		fieldset:nth-child(3) { animation-delay: 0.3s; }
+		fieldset:nth-child(4) { animation-delay: 0.4s; }
+	</style>
+</head>
+<body>
+	<fieldset>
+
+		<legend><strong>Etat Civil</strong></legend>
+		<div>
+			<span>
+				<label for="">Matricule:<label><input type="text">
+
+				<label for="">Nom:<label><input type="text">
+			</span>
+		</div>
+		<br/>
+		  <div>
+			<span>
+				<label for="">Prenoms:<label><input type="text">
+
+				     <label for="">Sexe:
+				     <select class="sexe" id="">
+				     	<option class="homme" id="">homme</option>
+				     	<option class="femme" id="">femme</option>
+				     </select>
+           
+        </select>
+				     </label>
+				
+			</span>
+		  </div>
+		<br/>
+		<div>
+			<span>
+			  <label for="">Date de naissance:<label><input type="text">
+			  <label for="">Age:<label><input type="id">
+			</span>
+		</div>
+		 </fieldset>
+		<fieldset>
+			<legend><strong> Mes diplomes</strong></legend>
+			<input type="checkbox"><label for="">CEP:</label>
+			<input type="checkbox"><label for="">BEPC:</label>
+			<input type="checkbox"><label for="">BAC:</label>
+		 </fieldset>
+	<fieldset>
+			<legend></strong>Expertise</strong></legend>
+			<input type="radio"name="Exp"><label for="">Expert en Informatique:<label>
+			<input type="radio"name="Exp"><label for="">Expert en Bavardage:</label>
+    </fieldset>
+   <fieldset>
+			<legend><strong>Les boutons</strong></legend>
+			<button> Envoyer</button> 
+			<button> Effacer</button>
+			<button> Quitter</button>
+   </fieldset>
+ </body> 
+  </html>
+

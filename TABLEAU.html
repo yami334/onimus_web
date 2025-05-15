@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="frame.css">
+	<style>
+		/* Style spécifique pour les tableaux */
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #f8fafc;
+			padding: 2rem;
+			color: #334155;
+		}
+	
+		table {
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 0;
+			margin: 2rem 0;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+			border-radius: 12px;
+			overflow: hidden;
+			background-color: white;
+		}
+	
+		caption {
+			font-size: 1.4rem;
+			font-weight: 700;
+			color: #1e293b;
+			margin-bottom: 1rem;
+			text-align: center;
+			padding: 0.8rem;
+			background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+			border-radius: 8px;
+			box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+		}
+	
+		th {
+			background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+			color: white;
+			padding: 1rem;
+			text-align: center;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			position: relative;
+		}
+	
+		th:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			background: rgba(255,255,255,0.3);
+		}
+	
+		td {
+			padding: 0.8rem 1rem;
+			border-bottom: 1px solid #e2e8f0;
+			text-align: center;
+		}
+	
+		tr:nth-child(even) {
+			background-color: #f8fafc;
+		}
+	
+		tr:hover {
+			background-color: #f1f5f9;
+			transform: scale(1.01);
+			transition: all 0.2s ease;
+		}
+	
+		/* Style spécifique pour les cellules fusionnées */
+		th[colspan="2"] {
+			font-size: 1.2rem;
+			text-align: center;
+			background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+		}
+	
+		/* Animation d'apparition */
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(20px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+	
+		table {
+			animation: fadeIn 0.6s ease-out forwards;
+		}
+	
+		/* Style responsive */
+		@media (max-width: 768px) {
+			table {
+				display: block;
+				overflow-x: auto;
+				white-space: nowrap;
+			}
+			
+			caption {
+				font-size: 1.2rem;
+			}
+		}
+	</style>
+</head>
+<body>
+<table >
+
+ <caption>Tableau:Liste des Etudiants</caption>  
+<thead> <!-- En-tête du tableau --> 
+
+    <tr>
+        <th>Matricule</th> 
+        <th>Nom</th> 
+       <th>Prenoms</th>
+       <th>sexe</th>
+    </tr>
+</thead>  
+
+<tbody> 
+<!-- Corps du tableau --> 
+<tr> 
+ <td>11504725</td> 
+ <td>KPOSSE</td> 
+ <td>Onimus</td>
+ <td>Masculin</td>
+ </tr> 
+<tr> 
+<td>11368125</td> 
+ <td>HAGBE</td> 
+ <td>Hyppoluthe</td>
+ <td>Masculin</td>	
+</tr> 
+	<tr> 
+ <td>11244725</td> 
+ <td>IROKO</td> 
+ <td>K.Damienne</td>
+ <td>Feminin</td>
+	</tr>  
+</tbody> 
+</table>    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		table, tr, th, td{
+			border:1px solid black;
+			border-collapse:collapse;
+		}
+	</style>
+</head>
+<body>
+<table >
+
+ <caption>Tableau1</caption>  
+<thead> <!-- En-tête du tableau --> 
+
+<tr>
+ <th colspan="2"><vertical-align>  IG-1 </th> 
+ 
+   </thead>  
+
+<tbody> 
+<!-- Corps du tableau --> 
+<tr> 
+ <td > GTL-1 </td> 
+ <td> GC-1 </td> 
+ 
+	</tr>  
+</tbody> 
+</table>    
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		table, tr, th, td{
+			border:1px solid black;
+			border-collapse:collapse;
+		}
+	</style>
+</head>
+<body>
+<table >
+
+ <caption>Tableau2</caption>  
+<thead> <!-- En-tête du tableau --> 
+
+<tr>
+ <th colspan="2"> IG-2 </th> 
+ 
+   </thead>  
+
+<tbody> 
+<!-- Corps du tableau --> 
+<tr> 
+ <td > GTL-2 </td> 
+ <td> GC-2 </td> 
+ 
+	</tr>  
+</tbody> 
+</table>    
+</body>
+</html>
+
